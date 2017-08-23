@@ -8,7 +8,7 @@ var element1=document.getElementById('img');
 element1.onclick=function()
 {
     var interval=setInterval(moveright,100);
-    element1.style.marginLeft='100px';
+    //element1.style.marginLeft='100px';
 };
 var marginleft=0;
 function moveright()
