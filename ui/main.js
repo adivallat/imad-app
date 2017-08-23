@@ -1,6 +1,6 @@
 console.log('Loaded!');
 
-var element=document.getElementById('maintext');
+/*var element=document.getElementById('maintext');
 element.innerHTML="bye value!";
 
 //move the image
@@ -17,4 +17,4 @@ element1.onclick=function()
 {
     var interval=setInterval(moveright,100);
 };
-
+*/
