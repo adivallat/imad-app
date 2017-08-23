@@ -7,5 +7,12 @@ element.innerHTML="bye value!";
 var element1=document.getElementById('img');
 element1.onclick=function()
 {
+    var interval=setInterval(moveright,100);
     element1.style.marginLeft='100px';
 };
+var marginleft;
+function moveright()
+{
+    marginleft=marginleft+10;
+    img.style.marginleft=marginleft+'px';
+}
