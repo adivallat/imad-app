@@ -6,11 +6,11 @@ element.innerHTML="bye value!";
 //move the image
 var element1=document.getElementById('img');
 
-var marginleft=0;
+var marginLeft=0;
 function moveright()
 {
     marginleft=marginleft+10;
-    element1.style.marginleft=marginleft+'px';
+    element1.style.marginLeft=marginLeft+'px';
 }
 
 element1.onclick=function()
