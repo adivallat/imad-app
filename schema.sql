@@ -1,5 +1,5 @@
 --
--- Name: article; Type: TABLE; Schema: public; Owner: coco98
+-- Name: article; Type: TABLE; Schema: public; Owner: adivallat
 --
 
 CREATE TABLE article (
@@ -11,7 +11,7 @@ CREATE TABLE article (
 );
 
 --
--- Name: article_id_seq; Type: SEQUENCE; Schema: public; Owner: coco98
+-- Name: article_id_seq; Type: SEQUENCE; Schema: public; Owner: adivallat
 --
 
 CREATE SEQUENCE article_id_seq
@@ -22,7 +22,7 @@ CREATE SEQUENCE article_id_seq
     CACHE 1;
 
 --
--- Name: comment; Type: TABLE; Schema: public; Owner: coco98
+-- Name: comment; Type: TABLE; Schema: public; Owner: adivallat
 --
 
 CREATE TABLE comment (
@@ -35,7 +35,7 @@ CREATE TABLE comment (
 
 
 --
--- Name: comment_id_seq; Type: SEQUENCE; Schema: public; Owner: coco98
+-- Name: comment_id_seq; Type: SEQUENCE; Schema: public; Owner: adivallat
 --
 
 CREATE SEQUENCE comment_id_seq
@@ -47,7 +47,7 @@ CREATE SEQUENCE comment_id_seq
 
 
 --
--- Name: user; Type: TABLE; Schema: public; Owner: coco98
+-- Name: user; Type: TABLE; Schema: public; Owner: adivallat
 --
 
 CREATE TABLE "user" (
@@ -58,7 +58,7 @@ CREATE TABLE "user" (
 
 
 --
--- Name: user_id_seq; Type: SEQUENCE; Schema: public; Owner: coco98
+-- Name: user_id_seq; Type: SEQUENCE; Schema: public; Owner: adivallat
 --
 
 CREATE SEQUENCE user_id_seq
@@ -70,27 +70,27 @@ CREATE SEQUENCE user_id_seq
 
 
 --
--- Name: id; Type: DEFAULT; Schema: public; Owner: coco98
+-- Name: id; Type: DEFAULT; Schema: public; Owner: adivallat
 --
 
 ALTER TABLE ONLY article ALTER COLUMN id SET DEFAULT nextval('article_id_seq'::regclass);
 
 
 --
--- Name: id; Type: DEFAULT; Schema: public; Owner: coco98
+-- Name: id; Type: DEFAULT; Schema: public; Owner: adivallat
 --
 
 ALTER TABLE ONLY comment ALTER COLUMN id SET DEFAULT nextval('comment_id_seq'::regclass);
 
 
 --
--- Name: id; Type: DEFAULT; Schema: public; Owner: coco98
+-- Name: id; Type: DEFAULT; Schema: public; Owner: adivallat
 --
 
 ALTER TABLE ONLY "user" ALTER COLUMN id SET DEFAULT nextval('user_id_seq'::regclass);
 
 --
--- Name: article_id; Type: CONSTRAINT; Schema: public; Owner: coco98
+-- Name: article_id; Type: CONSTRAINT; Schema: public; Owner: adivallat
 --
 
 ALTER TABLE ONLY article
@@ -98,7 +98,7 @@ ALTER TABLE ONLY article
 
 
 --
--- Name: article_title; Type: CONSTRAINT; Schema: public; Owner: coco98
+-- Name: article_title; Type: CONSTRAINT; Schema: public; Owner: adivallat
 --
 
 ALTER TABLE ONLY article
@@ -106,7 +106,7 @@ ALTER TABLE ONLY article
 
 
 --
--- Name: comment_id; Type: CONSTRAINT; Schema: public; Owner: coco98
+-- Name: comment_id; Type: CONSTRAINT; Schema: public; Owner: adivallat
 --
 
 ALTER TABLE ONLY comment
@@ -114,7 +114,7 @@ ALTER TABLE ONLY comment
 
 
 --
--- Name: user_id; Type: CONSTRAINT; Schema: public; Owner: coco98
+-- Name: user_id; Type: CONSTRAINT; Schema: public; Owner: adivallat
 --
 
 ALTER TABLE ONLY "user"
@@ -122,7 +122,7 @@ ALTER TABLE ONLY "user"
 
 
 --
--- Name: user_username; Type: CONSTRAINT; Schema: public; Owner: coco98
+-- Name: user_username; Type: CONSTRAINT; Schema: public; Owner: adivallat
 --
 
 ALTER TABLE ONLY "user"
@@ -130,7 +130,7 @@ ALTER TABLE ONLY "user"
 
 
 --
--- Name: comment_article_id_fkey; Type: FK CONSTRAINT; Schema: public; Owner: coco98
+-- Name: comment_article_id_fkey; Type: FK CONSTRAINT; Schema: public; Owner: adivallat
 --
 
 ALTER TABLE ONLY comment
@@ -138,7 +138,7 @@ ALTER TABLE ONLY comment
 
 
 --
--- Name: comment_user_id_fkey; Type: FK CONSTRAINT; Schema: public; Owner: coco98
+-- Name: comment_user_id_fkey; Type: FK CONSTRAINT; Schema: public; Owner: adivallat
 --
 
 ALTER TABLE ONLY comment
