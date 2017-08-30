@@ -1,23 +1,3 @@
-Skip to content
-This repository
-Search
-Pull requests
-Issues
-Marketplace
-Explore
- @adivallat
- Sign out
- Watch 11
-  Star 13
-  Fork 4,231 coco98/imad-2016-app
-forked from hasura-imad/imad-2016-app
- Code  Pull requests 1  Projects 0  Wiki Insights 
-Branch: master Find file Copy pathimad-2016-app/ui/article.js
-f89207b  on Nov 4, 2016
-@coco98 coco98 [imad-console] Updates ui/article.js
-1 contributor
-RawBlameHistory     
-100 lines (88 sloc)  3.52 KB
 // Eg: coco98.imad.hasura-app.io/articles/article-one will result in article-one
 var currentArticleTitle = window.location.pathname.split('/')[2];
 
@@ -118,15 +98,3 @@ function loadComments () {
 // The first thing to do is to check if the user is logged in!
 loadLogin();
 loadComments();
-© 2017 GitHub, Inc.
-Terms
-Privacy
-Security
-Status
-Help
-Contact GitHub
-API
-Training
-Shop
-Blog
-About
